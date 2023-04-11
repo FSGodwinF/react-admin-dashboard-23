@@ -1,0 +1,91 @@
+.newPage{
+    width: 100%;
+
+    display: flex;
+
+    .newContainer{
+        flex: 6;
+        
+        .top, .bottom{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(243, 201, 201, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 10px;
+            margin: 20px;
+
+            h1{
+                color: rgb(189, 186, 186);
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+        .bottom{
+            display: flex;
+
+            .left{
+            flex: 1;
+            text-align: center;
+
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+        
+            }
+            .right{
+                flex: 2;
+
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 25px;
+                    justify-content: space-around;
+
+                    .formInput{
+
+                        width: 40%;
+
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            font-weight: 600;
+
+                            .icon{
+                                cursor: pointer;
+                                color: cornflowerblue;
+                            }
+                        }
+                    
+
+                        input{
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            outline: none;
+                            border-bottom: 1px solid rgb(179, 176, 176);
+                        }
+                    }
+                    button{
+                        width: 200px;
+                        padding: 10px;
+                        cursor: pointer;
+                        border: none;
+                        height: 50%;
+                        border-radius: 5px;
+                        background: cornflowerblue;
+                        color: white;
+                        margin-top: 10px;
+                    }
+                }
+
+                
+            }
+            
+        }
+    }
+}
